@@ -16,21 +16,19 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class MemberDTO {
 
-    private final String notEmptyMessage = "This attribute is required.";
-
-    @NotEmpty(message = notEmptyMessage)
+    @NotEmpty(message = "This attribute is required.")
     @Size(min = 3, max =50, message = "'${validatedValue}' has to contain between {min} and {max} characteres.")
     private String name;
 
-    @NotEmpty(message = notEmptyMessage)
+    @NotEmpty(message = "This attribute is required.")
     @CPF(message = "'${validatedValue}' is invalid!")
     private String cpf;
 
-    @NotEmpty(message = notEmptyMessage)
+    @NotEmpty(message = "This attribute is required.")
     @Size(min = 3, max =50, message = "'${validatedValue}' has to contain between {min} and {max} caracteres.")
     private String neighborhood;
 
-    @NotNull(message = notEmptyMessage)
+    @NotNull(message = "This attribute is required.")
     @Past(message = "Date '${validatedValue}' is invalid.")
     private LocalDate birthDate;
 

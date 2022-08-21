@@ -9,6 +9,4 @@ public interface MemberMapper {
 
     Member toModel(MemberDTO memberDTO);
 
-    MemberDTO toDTO(Member member);
-
 }

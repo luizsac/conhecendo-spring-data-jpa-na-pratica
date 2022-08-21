@@ -7,9 +7,9 @@ import java.util.List;
 
 public interface FitnessAssessmentService {
 
-    FitnessAssessment saveFitnessAssessment(FitnessAssessmentDTO fitnessAssessmentDTO);
+    FitnessAssessment createFitnessAssessment(FitnessAssessmentDTO fitnessAssessmentDTO);
     FitnessAssessment getFitnessAssessment(Long id);
     List<FitnessAssessment> listFitnessAssessments();
-    FitnessAssessment deleteFitnessAssessement(Long id);
+    void deleteFitnessAssessment(Long id);
 
 }

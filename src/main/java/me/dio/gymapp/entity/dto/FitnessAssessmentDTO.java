@@ -16,15 +16,15 @@ public class FitnessAssessmentDTO {
 
     private final String notEmptyMessage = "This attribute is required.";
 
-    @NotEmpty
+    @NotNull
     @Positive
-    private Long idMember;
+    private Long memberId;
 
-    @NotEmpty(message = notEmptyMessage)
+    @NotNull
     @Positive
     private double weight;
 
-    @NotEmpty(message = notEmptyMessage)
+    @NotNull
     @Positive
     @DecimalMin(value = "1.00", message = "'${validatedValue}' has to be at least {value}.")
     private double height;

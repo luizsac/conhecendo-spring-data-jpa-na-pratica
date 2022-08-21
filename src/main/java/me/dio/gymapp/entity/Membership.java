@@ -20,6 +20,6 @@ public class Membership {
     @JoinColumn(name = "member_id")
     private Member member;
 
-    private LocalDateTime dataDaMatricula = LocalDateTime.now();
+    private LocalDateTime joiningDate = LocalDateTime.now();
 
 }
